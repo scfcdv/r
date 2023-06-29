@@ -1,49 +1,13 @@
-<head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9479194464131256" crossorigin="anonymous"></script>
-    <title>履歴削除</title>
-    <style>
-        main {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <script>
-        document.addEventListener('keydown', function(event) {
-          if (event.keyCode === 39) { 
-            const randomString1 = generateRandomString(12); 
-            let url = 'https://scfcdv.github.io/r/#' + randomString1;
-            window.location.href = url;
-          }
-        });
+<a href="#" onclick="generateAnchorLink();">リンク</a>
 
-        document.addEventListener('keydown', function(event) {
-          if (event.keyCode === 89) { 
-            runCodeRepeatedly();
-          }
-        });
-        
-        function executeCode() {
-          const randomString2 = generateRandomString(12);
-          let url2 = 'https://scfcdv.github.io/r/#' + randomString2;
-          window.location.href = url2;
-        }
-        function runCodeRepeatedly() {
-          setTimeout(function() {
-            executeCode();
-            runCodeRepeatedly();
-          }, 400); 
-        }
+<script>
+function generateAnchorLink() {
+  var randomString = generateRandomString(); // ランダムな文字列を生成する関数の呼び出し
+  var url = "https://scfcdv.github.io/r/#" + randomString;
+  window.location.href = url;
+}
 
-        function generateRandomString(length) {
-          var characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-          var randomString = '';
-          for (var i = 0; i < length; i++) {
-            var randomIndex = Math.floor(Math.random() * characters.length);
-            randomString += characters.charAt(randomIndex);
-          }
-          return randomString;
-        }
-    </script>
-</body>
-</html>
+function generateRandomString() {
+  // ランダムな文字列を生成する処理
+}
+</script>
